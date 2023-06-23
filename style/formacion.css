@@ -45,8 +45,7 @@
 .proyectos__imagen{
     padding-top:1rem ;
     padding-bottom: 1rem;
-    width:600px; 
-    height: 550px;
+    width:100vw;
 }
 .proyectos__descripcion{
     font-size: 1.5rem;
@@ -58,5 +57,11 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+    }
+    .proyectos__imagen{
+        padding-top:1rem ;
+        padding-bottom: 1rem;
+        width:850px; 
+        height: 550px;
     }
 }

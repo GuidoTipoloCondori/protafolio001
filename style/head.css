@@ -67,9 +67,8 @@
     margin-left: 1.7rem;
 }
 
-.head__navegacion {
-    display: flex;
-    padding-top: 1.5rem;
+.head__navegacion{
+    display: none;
 }
 
 
@@ -98,5 +97,11 @@
     }
     .head__email{
         display: none;
+    }
+}
+@media screen and (min-width: 600px){
+    .head__navegacion{
+        padding-top: 1.2rem;
+        display: block;
     }
 }
