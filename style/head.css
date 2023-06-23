@@ -1,0 +1,102 @@
+.head {
+    color: white;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    position: absolute;
+}
+
+.head__foto {
+    height: 6rem;
+}
+.head__foto:hover{
+    transition: 0.5s ease;
+    transform: scale(1.06);
+    filter: grayscale(0%);
+}
+.head__nombre{
+    font-family: Pacifico, cursive;
+    margin-top: .5rem;
+    text-align: center;
+}
+.head__letras{
+    font-family:  cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.letra{
+    transition: 0.6s;
+    transform: translate();
+    cursor: pointer;
+    color: #fff;
+    /*letra*/
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: .5rem;
+}
+.letra:hover{
+    transform: translateY(-1rem);
+    background: -webkit-linear-gradient(120deg,
+    hsl(19,90%,52%), hsl(56,100%,50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.head__email{
+    color: rgb(110, 196, 199);
+}
+
+
+
+.head__enlace {
+    font-size: 1.1rem;
+
+    display: inline-block;
+
+    margin-right: 1.7rem;
+    margin-bottom: 1.7rem;
+    margin-left: 1.7rem;
+}
+
+.head__navegacion {
+    display: flex;
+    padding-top: 1.5rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
+    .head__foto {
+        height: 10rem;
+        padding-left: 5rem;
+    }
+   
+    .letra{
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+
+
+    .head__navegacion {
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+        margin:1.5;
+    }
+    .head__email{
+        display: none;
+    }
+}
